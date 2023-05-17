@@ -15,7 +15,6 @@ grape(pinot_blanc).
 grape(champagne).
 grape(prosecco).
 
-
 region(france).
 region(italy).
 region(spain).
@@ -30,30 +29,25 @@ food(mollusk).
 food(fish).
 food(lobster).
 
-
 wine(nizza, medium_red, barbera, france).
 wine(barbera_d_asti, medium_red, barbera, italy).
-
-
-wine(nizza, medium_red, barbera).
-wine(barbera_d_asti, medium_red, barbera).
-wine(pomerol, medium_red, merlot).
-wine(saint_emilion, medium_red, merlot).
-wine(rioja, light_red, carignan).
-wine(carinena, light_red, carignan).
-wine(gevrey_chambertin, light_red, pinot_noir).
-wine(nuits_saint_georges, light_red, pinot_noir).
-wine(franciacorta, rich_white, chardonnay).
-wine(chablis, rich_white, chardonnay).
-wine(rhone, rich_white, viognier).
-wine(sauternes, light_white, sauvignon_blanc).
-wine(sancerre, light_white, sauvignon_blanc).
-wine(weissburgunder, light_white, pinot_blanc).
-wine(feher_burgundi, light_white, pinot_blanc).
-wine(bollinger, sparkling, champagne).
-wine(pommery, sparkling, champagne).
-wine(prosecco_di_conegliano, sparkling, prosecco).
-wine(prosecco_di_valdobbiadene, sparkling, prosecco).
+wine(pomerol, medium_red, merlot, united_states).
+wine(saint_emilion, medium_red, merlot, france).
+wine(rioja, light_red, carignan, china).
+wine(carinena, light_red, carignan, china).
+wine(gevrey_chambertin, light_red, pinot_noir, france).
+wine(nuits_saint_georges, light_red, pinot_noir, france).
+wine(franciacorta, rich_white, chardonnay, italy).
+wine(chablis, rich_white, chardonnay, spain).
+wine(rhone, rich_white, viognier, france).
+wine(sauternes, light_white, sauvignon_blanc, france).
+wine(sancerre, light_white, sauvignon_blanc, spain).
+wine(weissburgunder, light_white, pinot_blanc, united_states).
+wine(feher_burgundi, light_white, pinot_blanc, united_states).
+wine(bollinger, sparkling, champagne, united_states).
+wine(pommery, sparkling, champagne, united_states).
+wine(prosecco_di_conegliano, sparkling, prosecco, italy).
+wine(prosecco_di_valdobbiadene, sparkling, prosecco, italy).
 
 pairing(red_meat, medium_red).
 pairing(cured_meat, medium_red).
@@ -66,11 +60,10 @@ pairing(cured_meat, sparkling).
 pairing(pork, sparkling).
 pairing(poultry, sparkling).
 pairing(fish, sparkling).
-
-perfect_pairing(pork, medium_red).
-perfect_pairing(cured_meat, light_red).
-perfect_pairing(poultry, light_red).
-perfect_pairing(poultry, rich_white).
-perfect_pairing(lobster, rich_white).
-perfect_pairing(mollusk, sparkling).
-perfect_pairing(lobster, light_white).
+pairing(pork, medium_red).
+pairing(cured_meat, light_red).
+pairing(poultry, light_red).
+pairing(poultry, rich_white).
+pairing(lobster, rich_white).
+pairing(mollusk, sparkling).
+pairing(lobster, light_white).

@@ -1,0 +1,76 @@
+color(medium_red).
+color(light_red).
+color(rich_white).
+color(light_white).
+color(sparkling).
+
+grape(barbera).
+grape(merlot).
+grape(carignan).
+grape(pinot_noir).
+grape(chardonnay).
+grape(viognier).
+grape(sauvignon_blanc).
+grape(pinot_blanc).
+grape(champagne).
+grape(prosecco).
+
+
+region(france).
+region(italy).
+region(spain).
+region(united_states).
+region(china).
+
+food(red_meat).
+food(cured_meat).
+food(pork).
+food(poultry).
+food(mollusk).
+food(fish).
+food(lobster).
+
+
+wine(nizza, medium_red, barbera, france).
+wine(barbera_d_asti, medium_red, barbera, italy).
+
+
+wine(nizza, medium_red, barbera).
+wine(barbera_d_asti, medium_red, barbera).
+wine(pomerol, medium_red, merlot).
+wine(saint_emilion, medium_red, merlot).
+wine(rioja, light_red, carignan).
+wine(carinena, light_red, carignan).
+wine(gevrey_chambertin, light_red, pinot_noir).
+wine(nuits_saint_georges, light_red, pinot_noir).
+wine(franciacorta, rich_white, chardonnay).
+wine(chablis, rich_white, chardonnay).
+wine(rhone, rich_white, viognier).
+wine(sauternes, light_white, sauvignon_blanc).
+wine(sancerre, light_white, sauvignon_blanc).
+wine(weissburgunder, light_white, pinot_blanc).
+wine(feher_burgundi, light_white, pinot_blanc).
+wine(bollinger, sparkling, champagne).
+wine(pommery, sparkling, champagne).
+wine(prosecco_di_conegliano, sparkling, prosecco).
+wine(prosecco_di_valdobbiadene, sparkling, prosecco).
+
+pairing(red_meat, medium_red).
+pairing(cured_meat, medium_red).
+pairing(poultry, medium_red).
+pairing(fish, rich_white).
+pairing(poultry, light_white).
+pairing(mollusk, light_white).
+pairing(fish, light_white).
+pairing(cured_meat, sparkling).
+pairing(pork, sparkling).
+pairing(poultry, sparkling).
+pairing(fish, sparkling).
+
+perfect_pairing(pork, medium_red).
+perfect_pairing(cured_meat, light_red).
+perfect_pairing(poultry, light_red).
+perfect_pairing(poultry, rich_white).
+perfect_pairing(lobster, rich_white).
+perfect_pairing(mollusk, sparkling).
+perfect_pairing(lobster, light_white).

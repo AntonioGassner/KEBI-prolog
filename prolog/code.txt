@@ -1,0 +1,3 @@
+p_recommender(X, Y):- food(X), perfect_pairing(X, Z), wine(Y, Z, J), grape(J).
+recommender(X, Y):- food(X), pairing(X, Z), wine(Y, Z, J), grape(J).
+

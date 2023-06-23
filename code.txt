@@ -1,0 +1,72 @@
+color(medium_red).
+color(light_red).
+color(rich_white).
+color(light_white).
+color(sparkling).
+
+grape(barbera).
+grape(merlot).
+grape(carignan).
+grape(pinot_noir).
+grape(chardonnay).
+grape(viognier).
+grape(sauvignon_blanc).
+grape(pinot_blanc).
+grape(champagne).
+grape(prosecco).
+
+region(france).
+region(italy).
+region(spain).
+region(united_states).
+region(china).
+
+food(red_meat).
+food(cured_meat).
+food(pork).
+food(poultry).
+food(mollusk).
+food(fish).
+food(lobster).
+
+wine(nizza, medium_red, barbera, france).
+wine(barbera_d_asti, medium_red, barbera, italy).
+wine(pomerol, medium_red, merlot, united_states).
+wine(saint_emilion, medium_red, merlot, france).
+wine(rioja, light_red, carignan, china).
+wine(carinena, light_red, carignan, china).
+wine(gevrey_chambertin, light_red, pinot_noir, france).
+wine(nuits_saint_georges, light_red, pinot_noir, france).
+wine(franciacorta, rich_white, chardonnay, italy).
+wine(chablis, rich_white, chardonnay, spain).
+wine(rhone, rich_white, viognier, france).
+wine(sauternes, light_white, sauvignon_blanc, france).
+wine(sancerre, light_white, sauvignon_blanc, spain).
+wine(weissburgunder, light_white, pinot_blanc, united_states).
+wine(feher_burgundi, light_white, pinot_blanc, united_states).
+wine(bollinger, sparkling, champagne, united_states).
+wine(pommery, sparkling, champagne, united_states).
+wine(prosecco_di_conegliano, sparkling, prosecco, italy).
+wine(prosecco_di_valdobbiadene, sparkling, prosecco, italy).
+
+pairing(red_meat, medium_red).
+pairing(cured_meat, medium_red).
+pairing(poultry, medium_red).
+pairing(fish, rich_white).
+pairing(poultry, light_white).
+pairing(mollusk, light_white).
+pairing(fish, light_white).
+pairing(cured_meat, sparkling).
+pairing(pork, sparkling).
+pairing(poultry, sparkling).
+pairing(fish, sparkling).
+pairing(pork, medium_red).
+pairing(cured_meat, light_red).
+pairing(poultry, light_red).
+pairing(poultry, rich_white).
+pairing(lobster, rich_white).
+pairing(mollusk, sparkling).
+pairing(lobster, light_white).
+
+recommender(N, F, C, G, R):- wine(N, C, G, R), pairing_function(F, C), food(F), color(C), grape(G), region(R).
+pairing_function(F, C):- pairing(F, C), food(F), color(C).

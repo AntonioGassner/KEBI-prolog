@@ -1,2 +1,0 @@
-recommender(N, F, C, G, R):- wine(N, C, G, R), pairing_function(F, C), food(F), color(C), grape(G), region(R).
-pairing_function(F, C):- pairing(F, C), food(F), color(C).

@@ -49,24 +49,25 @@ wine(pommery, sparkling, champagne, united_states).
 wine(prosecco_di_conegliano, sparkling, prosecco, italy).
 wine(prosecco_di_valdobbiadene, sparkling, prosecco, italy).
 
-pairing(red_meat, medium_red).
-pairing(cured_meat, medium_red).
-pairing(poultry, medium_red).
-pairing(fish, rich_white).
-pairing(poultry, light_white).
-pairing(mollusk, light_white).
-pairing(fish, light_white).
-pairing(cured_meat, sparkling).
-pairing(pork, sparkling).
-pairing(poultry, sparkling).
-pairing(fish, sparkling).
-pairing(pork, medium_red).
-pairing(cured_meat, light_red).
-pairing(poultry, light_red).
-pairing(poultry, rich_white).
-pairing(lobster, rich_white).
-pairing(mollusk, sparkling).
-pairing(lobster, light_white).
 
-recommender(N, F, C, G, R):- wine(N, C, G, R), pairing_function(F, C), food(F), color(C), grape(G), region(R).
-pairing_function(F, C):- pairing(F, C), food(F), color(C).
+pairing(red_meat, medium_red, pairing).
+pairing(cured_meat, medium_red, pairing).
+pairing(poultry, medium_red, perfectPairing).
+pairing(fish, rich_white, pairing).
+pairing(poultry, light_white, pairing).
+pairing(mollusk, light_white, perfectPairing).
+pairing(fish, light_white, pairing).
+pairing(cured_meat, sparkling, pairing).
+pairing(pork, sparkling, pairing).
+pairing(poultry, sparkling, perfectPairing).
+pairing(fish, sparkling, pairing).
+pairing(pork, medium_red, pairing).
+pairing(cured_meat, light_red, perfectPairing).
+pairing(poultry, light_red, perfectPairing).
+pairing(poultry, rich_white, pairing).
+pairing(lobster, rich_white, perfectPairing).
+pairing(mollusk, sparkling, pairing).
+pairing(lobster, light_white, pairing).
+
+recommender(N, F, C, G, R, P):- wine(N, C, G, R), pairing_function(F, C, P), food(F), color(C), grape(G), region(R).
+pairing_function(F, C, P):- pairing(F, C, P), food(F), color(C).

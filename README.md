@@ -15,15 +15,19 @@ E is the region of provenience
 # Examples
 
 This query will output all wines in the knowledge base
+
 recommender(A, B, C, D, E)
 
 If you want a wine made from barbera grapes
+
 recommender(A, B, C, barbera, E)
 
 If you want to eat fish and drink an italian wine to it
+
 recommender(A, fish, C, D, italy)
 
 Some queries will not return any output, some queries will return more than strictly required. Let's take the following:
+
 recommender(A, B, C, D, italy)
 
 The output is any possible combination of data given the constraints imposed by the inputs. This does not pose a problem as long as we are filtering based on the properties of the wine, which are 1 to 1 relations. Things change when we have a N to N relation, like the one between wines and foods.
@@ -31,6 +35,7 @@ The output is any possible combination of data given the constraints imposed by 
 # Negation
 
 Say we want a wine which is light\_red, just to reduce the number of outputs
+
 recommender(A, B, light_red, D, E)
 
 This leaves us with a chinese and a french wine. If we now want to exclude all french wines we change the query to:
